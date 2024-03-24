@@ -1,9 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://bi0ahd7cv37i6"]
+[gd_scene load_steps=14 format=3 uid="uid://bi0ahd7cv37i6"]
 
 [ext_resource type="Script" path="res://microjogos/2024S1/projeto-andre/cenas/scripts/main.gd" id="1_b63cv"]
 [ext_resource type="Texture2D" uid="uid://05rbd8pekidl" path="res://microjogos/2024S1/projeto-andre/recursos/Velvet_S.jpg" id="2_ofn5e"]
 [ext_resource type="Shader" path="res://microjogos/2024S1/projeto-andre/cenas/main.gdshader" id="3_vfwhk"]
 [ext_resource type="Texture2D" uid="uid://cqndp3e4u2uru" path="res://microjogos/2024S1/projeto-andre/recursos/deck/back.png" id="4_8fhab"]
+[ext_resource type="Theme" uid="uid://cb4tlwb81nq48" path="res://principal/recursos/themes/TitleTheme.tres" id="5_hjki2"]
+[ext_resource type="AudioStream" uid="uid://qidh7sccrrtp" path="res://microjogos/2024S1/projeto-andre/recursos/chill.ogg" id="6_84q2t"]
+[ext_resource type="AudioStream" uid="uid://bt23jqfgvhbqy" path="res://microjogos/2024S1/projeto-andre/recursos/win.ogg" id="7_vvsn5"]
+[ext_resource type="Script" path="res://microjogos/2024S1/projeto-andre/cenas/Win.gd" id="8_0vg03"]
+[ext_resource type="AudioStream" uid="uid://d1lrflbw0l8vd" path="res://microjogos/2024S1/projeto-andre/recursos/lose.ogg" id="8_glcsv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kvkvv"]
 shader = ExtResource("3_vfwhk")
@@ -83,12 +88,31 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_8fhab")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 57.0
-offset_top = 27.0
-offset_right = 150.0
-offset_bottom = 74.0
-scale = Vector2(6, 6)
-text = "FAÇO! = ←
-PASSO! = →"
+offset_left = 104.0
+offset_top = -44.0
+offset_right = 769.0
+offset_bottom = 385.0
+scale = Vector2(0.8, 0.8)
+theme = ExtResource("5_hjki2")
+bbcode_enabled = true
+text = "[wave]
+ 
+ FACO! = ←
+ PASSO! = →
+[/wave]"
 fit_content = true
 scroll_active = false
+
+[node name="BG Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_84q2t")
+volume_db = 5.622
+autoplay = true
+
+[node name="Win" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_vvsn5")
+volume_db = 4.685
+script = ExtResource("8_0vg03")
+
+[node name="Lose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_glcsv")
+volume_db = 4.685

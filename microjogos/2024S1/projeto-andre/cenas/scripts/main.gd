@@ -37,7 +37,7 @@ func _ready():
 		Global.LANGUAGE.EN:
 			NotificationCenter.notify("<- TRY OR CRY! ->")
 		Global.LANGUAGE.PT:
-			NotificationCenter.notify("<- FAÇA OU PASSA! ->")
+			NotificationCenter.notify("<- FACA OU PASSA! ->")
 			
 	var all = all_cards()
 	

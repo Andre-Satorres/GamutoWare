@@ -7,17 +7,42 @@ extends Resource
 
 
 # Título do seu jogo
-var title_pt = "Titulo em Portugues"
-var title_en = "Title in English"
+var title_pt = "FACA OU PASSA"
+var title_en = "TRY OR CRY"
 
 # Detalhes dos créditos do seu jogo
 var credits_pt = """
-Criado por: [Seu nome!]
+Criado por: André Satorres
 
-Você pode preencher o resto deste campo com creditos de assets utilizados, links para sua redes sociais ou qualquer outro detalhe que ache relevante
+@tutucleitoso
+
+Obrigado por jogar!
+
+Imagens:
+https://opengameart.org/content/fabric-velvet-red-seamless-texture-with-normalmap-velvetsjpg
+https://godotshaders.com/shader/pulse-effect-godot-4/https://opengameart.org/content/playing-cards-0
+https://opengameart.org/content/playing-cards-vector-png
+
+Áudios:
+https://freesound.org/people/Seth_Makes_Sounds/sounds/659451/
+https://freesound.org/people/suntemple/sounds/253174/
+https://freesound.org/people/Joao_Janz/sounds/482653/
 """
-var credits_en = """
-Made by: [Your name!]
 
-Fill this space with credits to used assets, links to your social medias and whatever other details you think are important
+var credits_en = """
+Made by: André Satorres
+
+@tutucleitoso
+
+Thank you for playing!
+
+Images:
+https://opengameart.org/content/fabric-velvet-red-seamless-texture-with-normalmap-velvetsjpg
+https://godotshaders.com/shader/pulse-effect-godot-4/https://opengameart.org/content/playing-cards-0
+https://opengameart.org/content/playing-cards-vector-png
+
+Audios:
+https://freesound.org/people/Seth_Makes_Sounds/sounds/659451/
+https://freesound.org/people/suntemple/sounds/253174/
+https://freesound.org/people/Joao_Janz/sounds/482653/
 """

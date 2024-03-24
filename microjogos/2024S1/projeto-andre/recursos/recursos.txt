@@ -3,3 +3,8 @@ Guarde os recursos - como imagens, sons e fontes - que seu jogo vai usar aqui. Ã
 https://opengameart.org/content/fabric-velvet-red-seamless-texture-with-normalmap-velvetsjpg
 https://godotshaders.com/shader/pulse-effect-godot-4/https://opengameart.org/content/playing-cards-0 -> BACK.png
 https://opengameart.org/content/playing-cards-vector-png -> CARDS
+
+### SOUNDS
+https://freesound.org/people/Seth_Makes_Sounds/sounds/659451/
+https://freesound.org/people/suntemple/sounds/253174/
+https://freesound.org/people/Joao_Janz/sounds/482653/
